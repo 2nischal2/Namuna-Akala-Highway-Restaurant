@@ -1,0 +1,294 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+#logo {
+    height: 100px; 
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.Resto_name {
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5rem; 
+}
+
+.number {
+    margin-top: 20px;
+    margin-right: 10px;
+    color: navy;
+    font-size: 1.2rem;
+}
+
+/* Header Section */
+header {
+    background: url('aluparatha.webp') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 200px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #d35400;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Menu Section */
+#menu {
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.menu-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    margin: px 0;
+}
+
+/* Most loved dishes section */
+#loved_dishes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.special-item {
+    padding: 10px;
+    width: 30px;
+    display: flex;
+    column-gap: 100px;
+}
+
+#food {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: inherit;
+}
+
+/* Motto Section */
+#Motto {
+    font-size: 2rem;
+    text-align: center;
+    padding: 90px;
+    color: navy;
+}
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#socialmedia {
+    color: navy;
+    padding-left: 20px;
+    position: flex;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media query for devices smaller than 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    #logo {
+        margin: 0 auto; 
+        height: 80px; 
+        width: 80px;
+    }
+
+    .Resto_name {
+        font-size: 1.2rem; 
+    }
+
+    .number {
+        margin-top: 10px;
+        font-size: 1rem; 
+    }
+
+    #loved_dishes h2 {
+        font-size: 1.8rem; 
+    }
+
+    .special-item {
+        flex-direction: column;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #food {
+        height: 100px; 
+        width: 100px;
+    }
+
+    #Motto {
+        font-size: 1.5rem; 
+        padding: 30px;
+    }
+}
+
+/* Media query for devices smaller than 480px (phones) */
+@media (max-width: 480px) {
+    #logo {
+        height: 60px; 
+        width: 60px;
+    }
+
+    .Resto_name {
+        font-size: 1rem; 
+    }
+
+    .number {
+        font-size: 0.9rem; 
+    }
+
+    #loved_dishes h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 10px;
+    }
+
+    .special-item {
+        gap: 10px; 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #food {
+        height: 80px; 
+        width: 80px;
+    }
+
+    #Motto {
+        font-size: 1.2rem; 
+        padding: 20px; 
+    }
+}
